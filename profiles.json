@@ -1,0 +1,73 @@
+{
+    "template": {
+        "application_id": 100000000000000000,
+        "presence": {
+            "upper_line_description": "Upper line",
+            "lower_line_description": "Lower line",
+            "party_size": [1,5],
+            "start_time_count": "start",
+            "end_time_count": "",
+            "large_image": "https://i.imgur.com/cvamLSA.png",
+            "large_image_description": "Large image description",
+            "small_image": "https://i.imgur.com/05tvv3C.png",
+            "small_image_description": "Small image description",
+            "button": {
+                "first": {
+                    "label": "First button",
+                    "url": "https://www.google.com/"
+                },
+                "second": {
+                    "label": "Second button",
+                    "url": "https://www.google.com/"
+                }
+            }
+    }},
+    "pokemon": {
+        "application_id": 100000000000000000,
+        "presence": {
+            "upper_line_description": "Name: Lilith",
+            "lower_line_description": "Controler: XBOX ONE",
+            "party_size": [0,0],
+            "start_time_count": "start",
+            "end_time_count": "",
+            "large_image": "https://i.imgur.com/1SfvShp.jpg",
+            "large_image_description": "Defeated lords 5/5",
+            "small_image": "https://i.imgur.com/AuZqR0Q.png",
+            "small_image_description": "Sightseeing of Hisui",
+            "button": {
+                "first": {
+                    "label": "Official Website",
+                    "url": "https://legends.pokemon.com/en-us/"
+                },
+                "second": {
+                    "label": "",
+                    "url": ""
+                }
+            }
+        }
+    },
+    "clear": {
+        "application_id": 100000000000000000,
+        "presence": {
+            "upper_line_description": "",
+            "lower_line_description": "",
+            "party_size": [0,0],
+            "start_time_count": "",
+            "end_time_count": "",
+            "large_image": "",
+            "large_image_description": "",
+            "small_image": "",
+            "small_image_description": "",
+            "button": {
+                "first": {
+                    "label": "",
+                    "url": ""
+                },
+                "second": {
+                    "label": "",
+                    "url": ""
+                }
+            }
+        }
+    }
+}

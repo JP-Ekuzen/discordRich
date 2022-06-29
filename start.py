@@ -6,12 +6,14 @@ import json
 with open("config.json", "r", encoding='utf-8') as config_json_file:
     config_json = json.load(config_json_file)
 
-active_profile = 'pokemon'
-config_profile = config_json['profiles'][active_profile]
+with open("profiles.json", "r", encoding='utf-8') as profiles_json_file:
+    profiles_json = json.load(profiles_json_file)
+
+active_profile = config_json["active_profile"]
+config_profile = profiles_json[active_profile]
 
 application_id = config_profile['application_id']
-
-profile = config_json['profiles'][active_profile]['presence']
+profile = profiles_json[active_profile]['presence']
 
 
 def check_if_none(element_name):
@@ -56,16 +58,11 @@ def check_buttons(element_name):
 def curretly_time():
     return datetime.now().strftime("%H:%M:%S")
 
-client_id = application_id
-RPC = Presence(client_id)
+RPC = Presence(application_id)
 RPC.connect()
 
 print("\n" * 100)
-print(f"[{curretly_time()}] Starting...")
-time.sleep(1)
-
-print("\n" * 100)
-print(f"[{curretly_time()}] Started")
+print(f"[{curretly_time()}] Started!")
 
 RPC.update(
     details=check_if_none('upper_line_description'),

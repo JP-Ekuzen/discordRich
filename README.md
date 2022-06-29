@@ -33,6 +33,9 @@ Do you want to have your own editable game profiles in status on discord? Here�
 ![](https://i.imgur.com/wb37zNk.png)
 
 4. All editing options can be found in the file profiles.json and some pre-made profiles to help you understand which element is what. If you want to hide an element, you can find an example in the profile “clear” in the profiles.json file (primarily at the bottom)
+- In the field “start_time_count” the expected format is the [timestamp](https://www.epochconverter.com/), but I added the possibility to enter the word “start” which counts from the machine the time from the start of the application
+- The field “start_time_count” must be larger than “end_time_count”
+- If we leave the field “end_time_count” blank and complete the field “start_time_count” with the value “start”, it shows how much the application is running. But if we add the fields “start_time_count” and “end_time_count”, the counter shows how much is left from the date of “start_time_count” to the date of “end_time_count”
 
 ![](https://i.imgur.com/yMgATod.png)
 
